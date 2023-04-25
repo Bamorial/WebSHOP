@@ -11,7 +11,7 @@ export class ItemService {
     return[
       {
         id: 114,
-        name:"Item 1",
+        name:"Item 4",
         price:10,
         imageURL:",,,",
         description:"a short description about this productfhjdfhj"
