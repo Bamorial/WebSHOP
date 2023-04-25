@@ -1,0 +1,64 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: "OCEAN";
+    src: url("assets/BLUEOCEAN.ttf");
+  }
+@font-face {
+    font-family: "Poppins";
+    src: url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+}
+  @font-face {
+    font-family: "Pixel";
+    src: url("assets/Pixel-Regular.ttf");
+  }
+
+.btnPrimary{
+    @apply hover:scale-90 bg-primary-light rounded-md p-10 font-serif text-lg border-2 border-black active:shadow-inner  dark:bg-slate-400 touch-auto hover:-hue-rotate-180 text-center
+    
+}
+.textLetter{
+    @apply text-9xl hover:font-thin hover:scale-150 hover:text-accent-light hover:font-pixel
+}
+.imagebox{
+  box-sizing: border-box;
+
+
+  /* width: 200px; */
+ 
+  width: 1fr;
+  height: 240px;
+  
+  background: #FFE1B4;
+  border: 1px solid #000000;
+  box-shadow: 8px 8px 0px #000000;
+  border-radius: 10px;
+}
+.screen{
+  box-sizing: border-box;
+
+
+width: 90%;
+height: 140px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+border-radius: 10px;
+}
+.shadowTheme-l{
+  box-shadow: 8px 8px 0px #000000;
+}
+
+.shadowTheme-s{
+  box-shadow: 3px 3px 0px #000000;
+}
+/* .shadowTheme-nav{
+  box-shadow: 3px 5px 0px #000000;
+} */
+navTheme{
+  background: rgba(217, 217, 217, 0.2);
+box-shadow: inset 0px -2px 4px rgba(255, 255, 255, 0.25);
+backdrop-filter: blur(5px);
+}
