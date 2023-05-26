@@ -13,8 +13,9 @@ export class ShopComponent implements OnInit {
   
   constructor(private itemservice:ItemService){}
 
-  ngOnInit(): void {
-      this.items=this.itemservice.getAll();
+ async ngOnInit(): Promise<void> {
+     this.items= await this.itemservice.getAll();
+      console.log(this.items)
   }
 
 }

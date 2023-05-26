@@ -12,7 +12,7 @@ import { DataServiceService } from '../data-service.service';
 export class ImageboxComponent {
   @Input() itemName: string='Item'
  
-  @Input() itemPrice: number=20.0
+  @Input() itemPrice: string=''
   @Input() itemId: string=""
   @Input() itemDescription:string='A short description about this product'
   public itemCount:number=0

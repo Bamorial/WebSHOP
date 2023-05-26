@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ShopComponent } from './shop/shop.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { ContactComponent } from './contact/contact.component';
+import { Axios } from 'axios';
 
 
 
@@ -20,11 +22,13 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
     ImageboxComponent,
     HomeComponent,
     ShopComponent,
-    ShoppingCartComponent
+    ShoppingCartComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+   
    
   ],
   providers: [],

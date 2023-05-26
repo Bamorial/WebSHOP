@@ -1,7 +1,7 @@
 export class Items{
     id!: number
     name!:string
-    price!:number
+    price!:string
     imageURL?:string
     description?: string
 }
