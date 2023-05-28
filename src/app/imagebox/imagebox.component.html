@@ -1,15 +1,15 @@
 <div class="imagebox flex flex-col max-sm:h-96 items-center transition-height duration-150 ease-in-out  hover:h-96   ">
     
         <div class="screen mt-4 flex-shrink-0 max-sm:h-2/5"></div>
-        <div class=" ml-4 self-start font-sans font-extrabold text-3xl tracking-wide mt-1 ">{{itemName}}</div>
-        <div class=" ml-4 self-start font-sans font-bold text-gray-800 text-m mt-1 ">No. {{itemId}} </div>
+        <div class=" ml-4 self-start font-sans font-extrabold text-3xl tracking-wide mt-1 ">{{item?.name}}</div>
+        <div class=" ml-4 self-start font-sans font-bold text-gray-800 text-m mt-1 ">No. {{item?.number}} </div>
         <div class=" mt-5  self-start font-serif italic font-normal  text-opacity-60 text-l sm:overflow-hidden max-sm:overflow-hidden md:overflow-hidden lg:overflow-hidden ml-4 mr-13 w-11/12 ">
-        {{itemDescription}}
+        {{item?.description}}
         <div class="mt-6 flex justify-between mb-10   ">
             <div class="font-semibold">Price
-                <div class="font-semibold">{{itemPrice}}$</div>
+                <div class="font-semibold">{{item?.price}}$</div>
             </div>
-            <button (click)="increaseCount()" class="bg-accent-light text-white pt-1 pb-1 pl-2 pr-2 rounded-md shadowTheme-s self-center border-black border mr-2 active:shadow-none active:translate-x-1 active:translate-y-1 ">Buy</button>
+            <button (click)="getId(item?._id)" class="bg-accent-light text-white pt-1 pb-1 pl-2 pr-2 rounded-md shadowTheme-s self-center border-black border mr-2 active:shadow-none active:translate-x-1 active:translate-y-1 ">Buy</button>
 
 
 

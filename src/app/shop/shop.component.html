@@ -50,7 +50,7 @@
 <div class="flex justify-center">
     <div class="m-16 mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 "
     >
-    <app-imagebox *ngFor="let item of items" itemName={{item.name}} itemDescription="{{item.description}}"  itemId=101 [itemPrice]="item.price"  class=""></app-imagebox>
+    <app-imagebox *ngFor="let item of items" [item]="item"  class=""></app-imagebox>
     
     </div>
     </div>

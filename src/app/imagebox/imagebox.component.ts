@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { Input } from '@angular/core';
 import { ShoppingCartComponent } from '../shopping-cart/shopping-cart.component';
 import { DataServiceService } from '../data-service.service';
+import { Items } from '../models/items';
+import { Router } from '@angular/router';
+
 
 
 @Component({
@@ -10,21 +13,18 @@ import { DataServiceService } from '../data-service.service';
   styleUrls: ['./imagebox.component.css']
 })
 export class ImageboxComponent {
-  @Input() itemName: string='Item'
- 
-  @Input() itemPrice: string=''
-  @Input() itemId: string=""
-  @Input() itemDescription:string='A short description about this product'
+  @Input() item: Items | undefined
   public itemCount:number=0
-  constructor(private data: DataServiceService){
+  constructor(private data: DataServiceService, private router:Router){
   
   }
   
 
-  increaseCount(){
-
-    this.data.changeMessage()
+  getId(a?: any){
     
-  }
+   (window as any).id=a
+    console.log((window as any).id)
+    this.router.navigate(['./Order'])
+}
   
 }

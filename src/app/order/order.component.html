@@ -1,0 +1,40 @@
+<div class="m-10 flex justify-evenly gap-5">
+
+    <div class="w-1/6 h-10 text-center font-mono p-2 rounded-md shadowTheme-s border border-black   bg-accent-light">
+        name
+    </div>
+    <input [(ngModel)]="name" class="w-5/6 h-10   bg-primary-light text-center font-mono p-2 rounded-md shadowTheme-s border border-black ">
+        
+   
+</div>
+<div class="m-10 flex justify-evenly gap-5">
+
+    <div class="w-1/6 h-10 text-center font-mono p-2 rounded-md shadowTheme-s border border-black   bg-accent-light">
+        address
+    </div>
+    <input [(ngModel)]="address" class="w-5/6 h-10   bg-primary-light text-center font-mono p-2 rounded-md shadowTheme-s border border-black ">
+        
+    
+</div><div class="m-10 flex justify-evenly gap-5">
+
+    <div class="w-1/6 h-10 text-center font-mono p-2 rounded-md shadowTheme-s border border-black   bg-accent-light">
+        phone 
+    </div>
+    <input  [(ngModel)]="phone" class="w-5/6 h-10   bg-primary-light text-center font-mono p-2 rounded-md shadowTheme-s border border-black ">
+        
+    
+
+</div>
+<div class="m-10 flex justify-evenly gap-5">
+
+    <div class="w-1/6 h-10 text-center font-mono p-2 rounded-md shadowTheme-s border border-black   bg-accent-light">
+        e-mail
+    </div>
+    <input type="email" [(ngModel)]="mail" class="w-5/6 h-10   bg-primary-light text-center font-mono p-2 rounded-md shadowTheme-s border border-black ">
+        
+     
+</div>
+
+<div (click)="Submit()"  class="w-9/12 m-auto pt-7 h-20  text-center font-mono p-2 rounded-md shadowTheme-s border border-black   bg-accent-light active:shadow-none active:translate-x-1 active:translate-y-1">
+    submit
+</div>

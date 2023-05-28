@@ -12,6 +12,10 @@ import { ShopComponent } from './shop/shop.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { ContactComponent } from './contact/contact.component';
 import { Axios } from 'axios';
+import { OrderComponent } from './order/order.component';
+import { FormsModule } from '@angular/forms';
+import { DoneComponent } from './done/done.component';
+import { ErrorComponent } from './error/error.component';
 
 
 
@@ -23,11 +27,16 @@ import { Axios } from 'axios';
     HomeComponent,
     ShopComponent,
     ShoppingCartComponent,
-    ContactComponent
+    ContactComponent,
+    OrderComponent,
+    DoneComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule
+   
    
    
   ],
