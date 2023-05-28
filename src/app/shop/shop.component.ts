@@ -16,7 +16,7 @@ export class ShopComponent implements OnInit {
  async ngOnInit(): Promise<void> {
      this.items= await this.itemservice.getAll();
       console.log(this.items)
-      console.log((window as any).id)
+      
   }
 
 
